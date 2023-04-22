@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pomodoro Timer</title>
-  <link rel="stylesheet" href="timer-styles.css">
-</head>
-<body>
-  <div class="container">
-    <div class="timer-controls">
-      <button id="start" type="button">Start</button>
-      <button id="stop" type="button">Stop</button>
-      <button id="reset-cycle" type="button">Reset Cycle</button>
-      <button id="reset-step" type="button">Reset Step</button>
-      <button id="next-step" type="button">Next Step</button>
-      <button id="prev-step" type="button">Previous Step</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="timer-styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="timer-controls">
+        <button id="start" type="button">Start</button>
+        <button id="stop" type="button">Stop</button>
+        <button id="reset-cycle" type="button">Reset Cycle</button>
+        <button id="reset-step" type="button">Reset Step</button>
+        <button id="next-step" type="button">Next Step</button>
+        <button id="prev-step" type="button">Previous Step</button>
+      </div>
+      <div class="timer-display">
+        <h1 id="timer">25:00</h1>
+        <p>Current step: <span id="current-step">time to work</span></p>
+      </div>
     </div>
-    <div class="timer-display">
-      <h1 id="timer">25:00</h1>
-      <p>Current step: <span id="current-step">time to work</span></p>
-    </div>
-  </div>
-  <script src="timer-functionality.js"></script>
-</body>
+    <script src="timer-functionality.js"></script>
+  </body>
 </html>

@@ -1,25 +1,35 @@
-const timerDisplay = document.getElementById('timer');
-const currentStepDisplay = document.getElementById('current-step');
-const startButton = document.getElementById('start');
-const stopButton = document.getElementById('stop');
-const resetCycleButton = document.getElementById('reset-cycle');
-const resetStepButton = document.getElementById('reset-step');
-const nextStepButton = document.getElementById('next-step');
-const prevStepButton = document.getElementById('prev-step');
+const timerDisplay = document.getElementById("timer");
+const currentStepDisplay = document.getElementById("current-step");
+const startButton = document.getElementById("start");
+const stopButton = document.getElementById("stop");
+const resetCycleButton = document.getElementById("reset-cycle");
+const resetStepButton = document.getElementById("reset-step");
+const nextStepButton = document.getElementById("next-step");
+const prevStepButton = document.getElementById("prev-step");
 
 const stepNames = [
-  'Time to Work',
-  'Short Break',
-  'Time to Work',
-  'Short Break',
-  'Time to Work',
-  'Short Break',
-  'Time to Work',
-  'Short Break',
-  'Long Break',
+  "Time to Work",
+  "Short Break",
+  "Time to Work",
+  "Short Break",
+  "Time to Work",
+  "Short Break",
+  "Time to Work",
+  "Short Break",
+  "Long Break",
 ];
 
-const stepDurations = [25 * 60, 5 * 60, 25 * 60, 5 * 60, 25 * 60, 5 * 60, 25 * 60, 5 * 60, 30 * 60];
+const stepDurations = [
+  25 * 60,
+  5 * 60,
+  25 * 60,
+  5 * 60,
+  25 * 60,
+  5 * 60,
+  25 * 60,
+  5 * 60,
+  30 * 60,
+];
 
 let currentStep = 0;
 let timeLeft = stepDurations[currentStep];
@@ -28,7 +38,9 @@ let timerInterval = null;
 function formatTime(seconds) {
   const minutes = Math.floor(seconds / 60);
   seconds %= 60;
-  return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+  return `${minutes.toString().padStart(2, "0")}:${seconds
+    .toString()
+    .padStart(2, "0")}`;
 }
 
 function updateDisplay() {
@@ -82,11 +94,11 @@ function prevStep() {
   updateDisplay();
 }
 
-startButton.addEventListener('click', startTimer);
-stopButton.addEventListener('click', stopTimer);
-resetCycleButton.addEventListener('click', resetCycle);
-resetStepButton.addEventListener('click', resetStep);
-nextStepButton.addEventListener('click', nextStep);
-prevStepButton.addEventListener('click', prevStep);
+startButton.addEventListener("click", startTimer);
+stopButton.addEventListener("click", stopTimer);
+resetCycleButton.addEventListener("click", resetCycle);
+resetStepButton.addEventListener("click", resetStep);
+nextStepButton.addEventListener("click", nextStep);
+prevStepButton.addEventListener("click", prevStep);
 
 updateDisplay();

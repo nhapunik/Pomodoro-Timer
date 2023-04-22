@@ -1,89 +1,100 @@
 /* Reset some default browser styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-  }
-  
-  .container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    border: 3px solid #00b7ff;
-    border-radius: 10px;
-  }
-  
-  .container::before {
-    min-width: 70%;
-    content: "";
-    position: absolute;
-    bottom: -60px;
-    left: 5%;
-    right: 5%;
-    height: 30px;
-    border-radius: 0 0 10px 10px;
-    z-index: -1;
-    transform: scaleY(0.5);
-    transform-origin: bottom;
-    box-shadow: 0 -15px 30px rgba(0, 183, 255, 0.2);
-    filter: blur(15px);
-  }
-  
-  .timer-controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  button {
-    background-color: #1c1c1c;
-    border: 2px solid #3a3a3a;
-    color: #f0f0f0;
-    font-size: 16px;
-    padding: 8px 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #2a2a2a;
-    border-color: #5a5a5a;
-  }
-  
-  button:active {
-    background-color: #1c1c1c;
-    border-color: #3a3a3a;
-  }
-  
-  .timer-display {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #timer {
-    font-size: 64px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #00b7ff;
-  }
-  
-  #current-step {
-    font-size: 24px;
-    font-weight: bold;
-    color: #00b7ff;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 3px solid #00b7ff;
+  border-radius: 10px;
+}
+
+.container::before {
+  min-width: 70%;
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 5%;
+  right: 5%;
+  height: 30px;
+  border-radius: 0 0 10px 10px;
+  z-index: -1;
+  transform: scaleY(0.5);
+  transform-origin: bottom;
+  box-shadow: 0 -15px 30px rgba(0, 183, 255, 0.2);
+  filter: blur(15px);
+}
+
+.timer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  background-color: #1c1c1c;
+  border: 2px solid #3a3a3a;
+  color: #f0f0f0;
+  font-size: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2a2a2a;
+  border-color: #5a5a5a;
+}
+
+button:active {
+  background-color: #1c1c1c;
+  border-color: #3a3a3a;
+}
+
+.timer-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timer {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00b7ff;
+}
+
+#current-step {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00b7ff;
+}
+
+.timer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.timer-controls button {
+  margin: 2px auto;
+}
