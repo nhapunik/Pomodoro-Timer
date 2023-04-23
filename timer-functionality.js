@@ -6,6 +6,20 @@ const resetCycleButton = document.getElementById("reset-cycle");
 const resetStepButton = document.getElementById("reset-step");
 const nextStepButton = document.getElementById("next-step");
 const prevStepButton = document.getElementById("prev-step");
+const startStopBtn = document.getElementById('start-stop');
+
+let timerRunning = false;
+
+startStopBtn.addEventListener('click', () => {
+  timerRunning = !timerRunning;
+  if (timerRunning) {
+    startStopBtn.textContent = 'Stop';
+    startTimer();
+  } else {
+    startStopBtn.textContent = 'Start';
+    stopTimer();
+  }
+});
 
 const stepNames = [
   "Time to Work",
