@@ -24,6 +24,17 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: #00b7ff;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: white;
+  transition: 1s;
+}
+
 .container {
   position: relative;
   display: flex;
