@@ -46,12 +46,22 @@ body {
 .timer-controls {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 
+.timer-controls button {
+  margin: 2px auto;
+  flex: 1 1 auto;
+  min-width: 100px;
+  max-width: 200px;
+}
+
 button {
+  max-width: auto;
   background-color: #1c1c1c;
   border: 2px solid #3a3a3a;
+  border-radius: 10px;
   color: #f0f0f0;
   font-size: 16px;
   padding: 8px 16px;
@@ -98,3 +108,4 @@ button:active {
 .timer-controls button {
   margin: 2px auto;
 }
+
