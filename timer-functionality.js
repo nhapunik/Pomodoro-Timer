@@ -1,7 +1,6 @@
 const timerDisplay = document.getElementById("timer");
 const currentStepDisplay = document.getElementById("current-step");
-const startButton = document.getElementById("start");
-const stopButton = document.getElementById("stop");
+const startStopBtn = document.getElementById('start-stop');
 const resetCycleButton = document.getElementById("reset-cycle");
 const resetStepButton = document.getElementById("reset-step");
 const nextStepButton = document.getElementById("next-step");
@@ -47,6 +46,18 @@ function updateDisplay() {
   timerDisplay.textContent = formatTime(timeLeft);
   currentStepDisplay.textContent = stepNames[currentStep];
 }
+let timerRunning = false;
+
+startStopBtn.addEventListener('click', () => {
+  timerRunning = !timerRunning;
+  if (timerRunning) {
+    startStopBtn.textContent = 'Stop';
+    startTimer();
+  } else {
+    startStopBtn.textContent = 'Start';
+    stopTimer();
+  }
+});
 
 function startTimer() {
   if (!timerInterval) {
