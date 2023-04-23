@@ -1,7 +1,5 @@
 const timerDisplay = document.getElementById("timer");
 const currentStepDisplay = document.getElementById("current-step");
-const startButton = document.getElementById("start");
-const stopButton = document.getElementById("stop");
 const resetCycleButton = document.getElementById("reset-cycle");
 const resetStepButton = document.getElementById("reset-step");
 const nextStepButton = document.getElementById("next-step");
@@ -108,8 +106,6 @@ function prevStep() {
   updateDisplay();
 }
 
-startButton.addEventListener("click", startTimer);
-stopButton.addEventListener("click", stopTimer);
 resetCycleButton.addEventListener("click", resetCycle);
 resetStepButton.addEventListener("click", resetStep);
 nextStepButton.addEventListener("click", nextStep);
