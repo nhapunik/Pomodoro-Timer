@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   flex-direction: column;
   background-color: #121212;
   color: #f0f0f0;
@@ -46,7 +46,7 @@ a:hover {
   border-radius: 10px;
 }
 
-.container::before{
+.container::before {
   min-width: 70%;
   content: "";
   position: absolute;
@@ -127,4 +127,3 @@ button:active {
 .timer-controls button {
   margin: 2px auto;
 }
-
