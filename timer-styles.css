@@ -7,6 +7,7 @@
 
 body {
   font-family: 'Titillium Web', sans-serif;
+  flex-direction: column;
   background-color: #121212;
   color: #f0f0f0;
   display: flex;
@@ -14,6 +15,13 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 20px;
+}
+
+.title {
+  margin-bottom: 5rem;
+  color: #00b7ff;
+  position: relative;
+  text-align: center;
 }
 
 .container {
@@ -27,7 +35,7 @@ body {
   border-radius: 10px;
 }
 
-.container::before {
+.container::before{
   min-width: 70%;
   content: "";
   position: absolute;
